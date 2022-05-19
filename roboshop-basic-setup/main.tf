@@ -1,6 +1,6 @@
 module "frontend" {
   source      = "./ec2"
-  COMPONENT   = frontend
+  COMPONENT   = "frontend"
   APP_VERSION = "1.0.0"
 }
 
