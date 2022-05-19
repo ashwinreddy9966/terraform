@@ -6,3 +6,9 @@ module "frontend" {
 }
 
 
+variable "COMPONENTS" {
+  default = [
+    "frontend",
+    "mongo"
+  ]
+}
