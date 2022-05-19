@@ -1,2 +1,2 @@
-variable "COMPONENTS" {}
+variable "COMPONENT" {}
 variable "APP_VERSION" {}
