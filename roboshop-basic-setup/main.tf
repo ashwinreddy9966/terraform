@@ -4,11 +4,3 @@ module "frontend" {
   COMPONENT   = var.COMPONENTS[count.index]
   APP_VERSION = var.APP_VERSION[count.index]
 }
-
-
-variable "COMPONENTS" {
-  default = [
-    "frontend",
-    "mongo"
-  ]
-}
