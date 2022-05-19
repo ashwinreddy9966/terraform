@@ -4,7 +4,7 @@ variable "COMPONENTS" {
     "mongo"
   ]
 }
-variable "APP_VERSION" {
+variable "ALL_COMPONENTS" {
   default = {
       mongodb   = "null",
       catalogue = "1.1.2"
