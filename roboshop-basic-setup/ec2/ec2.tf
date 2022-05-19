@@ -18,7 +18,7 @@ resource "aws_spot_instance_request" "cheap_worker" {
       }
 
       inline = [
-            "ansible-pull -U https://github.com/ashwinreddy9966/ansible.git roboshop-pull.yml -e ENV=dev-e APP_VERSION=${APP_VERSION} -e COMPONENT=${var.COMPONENT}"
+            "ansible-pull -U https://github.com/ashwinreddy9966/ansible.git roboshop-pull.yml -e ENV=dev -e APP_VERSION=${APP_VERSION} -e COMPONENT=${var.COMPONENT}"
       ]
   }
 }
