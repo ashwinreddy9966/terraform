@@ -1,7 +1,7 @@
 variable "COMPONENTS" {
   default = [
-    "frontend",
-    "mongo"
+    "mongo",
+    "catalogue"
   ]
 }
 variable "ALL_COMPONENTS" {
