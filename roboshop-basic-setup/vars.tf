@@ -13,14 +13,8 @@ variable "APP_VERSION" {
 }
 
 variable "ALL_COMPONENTS" {
-  default = [
-    {
-      COMPONENT = "mongodb"
-      APP_VERSION = "null"
-    },
-    {
-      COMPONENT = "catalogue"
-      APP_VERSION = "1.0.4"
-    }
-  ]
+  default = {
+     mongodb = "null"
+     frontend = "1.0.9"
+  }
 }

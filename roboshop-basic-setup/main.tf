@@ -1,10 +1,12 @@
-#module "frontend" {
-#  count       = length(var.COMPONENTS)
-#  source      = "./ec2"
-#  COMPONENT   = var.COMPONENTS[count.index]
-#  APP_VERSION = var.APP_VERSION[count.index]
+module "component" {
+  for_each    = var.ALL_COMPONENTS
+  source      = "./ec2"
+  COMPONENT   = each.key
+  APP_VERSION = each.value
+}
+
+#output "sample" {
+#  value = [for o in var.ALL_COMPONENTS : o.COMPONENT]
 #}
 
-output "sample" {
-  value = [for o in var.ALL_COMPONENTS : o.COMPONENT]
-}
+
