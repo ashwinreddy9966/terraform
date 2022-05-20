@@ -6,5 +6,5 @@
 #}
 
 output "sample" {
-  value = [for o in var.ALL_COMPONENTS : o.default]
+  value = [for o in var.ALL_COMPONENTS : o.COMPONENT]
 }
