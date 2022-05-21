@@ -4,4 +4,5 @@ resource "aws_route53_record" "component" {
   type    = "NS"
   ttl     = "60"
   records = [aws_spot_instance_request.cheap_worker.private_ip]
+
 }
